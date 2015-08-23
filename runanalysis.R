@@ -77,6 +77,9 @@ data$activity<-factor(data$activity, labels=activities)
 
 # I already named all variables in step 2 when reading in test and train data sets.
 
+# write tidy dataset to file named "UCI_tidy.txt"
+write.table(data, file="UCI_tidy.txt", row.name=F)
+
 # 5. From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
 
 # create vector of variable names, used for later labeling
